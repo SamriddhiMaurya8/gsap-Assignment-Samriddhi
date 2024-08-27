@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+}
+html,body{
+    height: 100%;
+    width:100%;
+}
+
+.impact1  ,.impact2 ,.impact3, .impact4{
+    width: 665px;
+    height: 512px;
+    
+}
+.impact-proof{
+    display: flex;
+    gap: 50px;
+}
+.work-impact{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+}
+
+
+.bottom-section{
+    display: flex;
+    gap: 25vh;
+    overflow: hidden;
+    background: #000;
+    /* width: 100%; */
+}
+
+
+
+.bottom-section1{
+    display: flex;
+  
+        /* position: relative; */
+        width: 25%;
+        min-width: 25rem;
+        overflow: hidden;
+    
+    
+}
+.bottom-section2{
+    padding:25vh 25vw 25vw 0 ; 
+    display: flex;
+    height: 50vh;
+    gap: 10vw;
+}
+.bottom-left , .bottom-right{
+    display: flex;
+    color: white;
+    flex-direction: column;
+    gap: 15vh;
+}
+.bottom-right{
+    gap: 7vh;
+}
+.footer-nav{
+    color: white;
+}
+ul{
+    list-style: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-heading{
+    /* width:25vw; */
+    height: 20vh;
+}
+.support-msg{
+    width:9rem;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.bottom-para{
+    width: 25vw;
+}
+.donate-btn{
+    height: 50px;
+    width: 10rem;
+    background:  white;
+}
+.donate-btn:hover{
+    cursor: pointer;
+}
+.footer-nav a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: transform 0.3s ease; /* Adds smooth transition */
+}
+
+.footer-nav a:hover {
+    transform: translateX(10px); /* Slides the text 10px to the right on hover */
+}
+
+/* CSS for the half-circle */
+.half-circle {
+    position: absolute;
+    left: -10px; /* Adjust left position to move it beside the text */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%) rotate(180deg); /* Rotate by 90 degrees */
+    width: 0; /* Start hidden */
+    height: 12px; /* Adjust height for the desired circle size */
+    background-color: white; /* Set color of the half-circle to white */
+    border-radius: 0 5px 5px 0; /* Shape into a rotated half-circle */
+    pointer-events: none; /* Ignore hover on the half-circle */
+    transition: width 0.3s ease; /* Smooth transition for width */
+  }
+  
+  .container-bottom-right{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .input-container {
+    /* background: #bc6a6a; */
+    width: 50vw;
+    padding: 25px 0;
+}
+
+.input-container h1{
+    font-family: Arial, Helvetica, sans-serif;
+color: #fff;
+}
+.input {
+    display: flex;
+
+    /* align-items: center;
+    justify-content: center; */
+    /* gap: 10px; */
+}
+
+.input input {
+    width: 600px;
+    height:62px;
+    position: relative;
+    padding: 5px 5px;
+    border: 1px solid white;
+    /* border-radius: 5px; */
+    background: #000;
+    margin-top: 30px;
+    color: white;
+    font-size: 20px;
+}
+
+.input i {
+    font-size: 20px;
+    
+    cursor: pointer;
+    position: absolute;
+    /* width: 95px; */
+    color: white;
+    margin-top: 50px;
+    /* left: 23px ; */
+    right: 13%;
+}
+
+
+.social-icon-div{
+    display: flex;
+    /* background:#a6bb73 ; */
+    gap: 7%; 
+}
+.icons{
+    display: flex;
+    /* background:#e7f65d; */
+    padding-top: 15px;
+    gap: 40px;
+    color: white;
+}
+.icons i{
+    height: 23px;
+    width: 23px;
+}
+.p-div{
+    width: 20vw;
+    color: white;
+    font-weight: 300;
+}
+
+.final-bottom-div{
+    display: flex;
+    gap: 20%;
+    color:#7b8e82
+}
