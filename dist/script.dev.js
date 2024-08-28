@@ -145,7 +145,8 @@ gsap.registerPlugin(ScrollTrigger);
 gsap.to('.imgS', {
   x: -1000,
   duration: 3,
-  scrollTrigger: '.imgS'
+  scrollTrigger: '.imgS',
+  toggleActions: 'play play play play'
 });
 gsap.to('.home-page', {
   backgroundColor: 'black',
@@ -153,7 +154,19 @@ gsap.to('.home-page', {
   scrollTrigger: {
     trigger: '.home-page',
     start: 'top top',
-    end: '+=100%',
+    end: '+=80%',
+    scrub: true // pin: true, 
+    // pinSpacing: false,   
+
+  }
+});
+gsap.to('.header', {
+  backgroundColor: 'white',
+  color: 'black',
+  scrollTrigger: {
+    trigger: '.header',
+    start: 'top top',
+    end: '+=80%',
     scrub: true // pin: true, 
     // pinSpacing: false,   
 

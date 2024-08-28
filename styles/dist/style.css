@@ -123,11 +123,8 @@ body {
   width: 100%;
   height: 100%;
   display: grid;
-  /* Use grid layout */
   grid-template-columns: repeat(12, 1fr);
-  /* More columns for denser pattern */
   grid-template-rows: repeat(12, 5fr);
-  /* More rows for denser pattern */
   gap: -5px;
 }
 .main-heading .heading-img .semicircle {
@@ -778,5 +775,4 @@ header .container .logo .nav .nav-list li .top-btn {
 
 .home-page h1 span {
   color: inherit;
-  /* Inherit color from .home-page */
 }

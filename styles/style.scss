@@ -127,12 +127,12 @@ body {
       // left: 0;
       width: 100%;
       height: 100%;
-      display: grid; /* Use grid layout */
+      display: grid; 
       grid-template-columns: repeat(
         12,
         1fr
-      ); /* More columns for denser pattern */
-      grid-template-rows: repeat(12, 5fr); /* More rows for denser pattern */
+      ); 
+      grid-template-rows: repeat(12, 5fr); 
       gap: -5px;
     }
 
@@ -832,5 +832,5 @@ header {
 }
 
 .home-page h1 span {
-  color: inherit; /* Inherit color from .home-page */
+  color: inherit; 
 }
