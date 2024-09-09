@@ -20,7 +20,7 @@ images.forEach(function (image) {
 var textContentElements = document.querySelectorAll('.textt-content1');
 textContentElements.forEach(function (element) {
   gsap.from(element, {
-    y: -50,
+    y: 50,
     opacity: 0,
     duration: 1,
     ease: 'power3.out',
@@ -97,7 +97,6 @@ gsap.to('.heading-textt .char', {
   scrollTrigger: {
     trigger: '.heading-textt',
     start: 'top 90%',
-    // end: 'bottom 25%', 
     scrub: true,
     toggleActions: 'play play play play',
     markers: false
@@ -111,8 +110,8 @@ gsap.to('.chaising-caroll-heading .char', {
   ease: 'power2.out',
   scrollTrigger: {
     trigger: '.chaising-caroll-heading .char',
-    start: 'top 90%',
-    // end: 'bottom 25%', 
+    start: 'top 100%',
+    end: 'bottom 55%',
     scrub: true,
     toggleActions: 'play play play play',
     markers: false
@@ -132,22 +131,20 @@ gsap.to('.heading-bottom-left .char', {
     toggleActions: 'play play play play'
   }
 });
-document.addEventListener("DOMContentLoaded", function () {
-  var semicirclesContainer = document.querySelector(".semicircles");
-
-  for (var i = 0; i < 144; i++) {
-    var semicircle = document.createElement("div");
-    semicircle.classList.add("semicircle");
-    semicirclesContainer.appendChild(semicircle);
-  }
-});
 gsap.registerPlugin(ScrollTrigger);
-gsap.to('.imgS', {
-  x: -1000,
-  duration: 3,
-  scrollTrigger: '.imgS',
-  toggleActions: 'play play play play'
-});
+var tl = gsap.timeline({
+  scrollTrigger: {
+    trigger: 'img-container',
+    start: 'top 50%',
+    end: 'bottom top',
+    markers: true,
+    toggleActions: "restart none reverse reset"
+  }
+}).from(".imgS", {
+  opacity: 0,
+  x: 1800,
+  duration: 1
+}, 0);
 gsap.to('.home-page', {
   backgroundColor: 'black',
   color: 'white',
